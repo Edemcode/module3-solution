@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+}
+h2{
+	text-align: center;
+}
+
+body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial;
+		}
+
+#header-nav {
+	background-color: purple ;
+	border-radius:0;
+	border: 0;
+}
+
+.navbar-brand {
+	padding: 15px;
+	position: absolute;
+	left: 10px;
+	margin-bottom: 20px;
+}
+
+.navbar-brand a:hover,.navbar-brand a:focus {
+	text-decoration: none;
+}
+
+.navbar-brand h1 {
+	font-family: serif;
+	color: lightgoldenrodyellow;
+	font-size: 2em;
+	font-weight: bold;
+	margin-left: -15px;
+	margin-top: 0;
+	line-height: .75;
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+
+#nav-list a {
+	color: black;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background:#E7E7E7;
+}
+
+.navbar-header button .navbar-toggle .navbar .icon-bar {
+	border: 1px solid #61122f;
+}
+
+.navbar-toggle {
+	clear: both;
+	margin-top: 30px;
+}
+
+		/* desktop view */
+			.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.section  {
+			flex: 1;
+			margin: 10px;
+			padding: 10px;
+			/*/border: 1px solid ;*/
+			background-color: #999999;
+			text-align: center;
+			position: relative;
+		}
+
+
+.section .black {
+ /* position: absolute;*/
+  /*top: 0;*/
+  left: 40%;
+  border: 20px;
+  margin: -10px;
+  /*width: 0.002%;*/
+  /*border: 1px solid black;*/
+  text-align: center ;
+  font-size: 1.2em; 
+  text-transform: uppercase;
+  /*background-color:  #056608;*/
+  color: #000000;
+  opacity: .9;
+  font-weight: bold;
+  font-size: 135%;
+}
+
+ .section .red {
+  /*position: absolute;
+  /*top: 0;*/
+  left: 45%;
+  border: 20px;
+  margin: -10px;
+  /*width: 30%;*/
+  /*border: 1px solid black;*/
+  text-align: center ;
+  font-size: 1.2em; 
+  text-transform: uppercase;
+  /*background-color: #FF0000;*/
+  color: #000000;
+  opacity: .9;
+  font-weight: bold;
+  font-size: 135%;
+}
+
+
+ .section .blue {
+ /* position: absolute;
+  /*top: 0;*/
+  right: 45%;
+  border: 20px;
+  margin: -10px;
+  /*/width: 30%;*/
+  /*/border: 1px solid black;*/
+  text-align: center ;
+  font-size: 1.2em; 
+  text-transform: uppercase;
+  /*/background-color: #0000FF;*/
+  color: #000000;
+  /*/opacity: .9;*/
+  font-weight: bold;
+  font-size: 135%;
+}
+
+		/* tablet view */
+		@media (min-width: 768px) and (max-width: 991px) {
+			.container {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.section {
+				flex-basis: 40%;
+			}
+
+			.section:nth-child(3){
+				flex-basis: 100%;
+			}
+		}
+
+		/* mobile view */
+		@media only screen and (max-width: 767px) {
+			.section {
+				flex-basis: 100%;
+			}
+		}
